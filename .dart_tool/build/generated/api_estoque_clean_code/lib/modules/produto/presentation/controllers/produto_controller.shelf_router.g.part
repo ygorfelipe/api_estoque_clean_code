@@ -1,0 +1,10 @@
+// **************************************************************************
+// ShelfRouterGenerator
+// **************************************************************************
+
+Router _$ProdutoControllerRouter(ProdutoController service) {
+  final router = Router();
+  router.add('GET', r'/', service.find);
+  router.add('POST', r'/', service.create);
+  return router;
+}
