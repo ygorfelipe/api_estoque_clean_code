@@ -1,0 +1,9 @@
+// **************************************************************************
+// ShelfRouterGenerator
+// **************************************************************************
+
+Router _$ConnectionControllerRouter(ConnectionController service) {
+  final router = Router();
+  router.add('GET', r'/', service.registerStudent);
+  return router;
+}
